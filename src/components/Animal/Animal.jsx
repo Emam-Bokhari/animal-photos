@@ -1,5 +1,7 @@
+import PropTypes from 'prop-types'
+
 const Animal=({data})=>{
-    const {id,url,width,height}=data
+    const {url}=data
     return (
         <div>
            <div>
@@ -8,4 +10,9 @@ const Animal=({data})=>{
         </div>
     )
 }
+
+Animal.propTypes={
+    data:PropTypes.object.isRequired
+}
+
 export default Animal

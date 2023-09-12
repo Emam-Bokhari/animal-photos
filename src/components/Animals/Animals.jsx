@@ -13,7 +13,7 @@ const Animals = () => {
             <section className="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-20 bg-indigo-300 my-10 rounded-md">
                 <h2 className="text-2xl font-bold text-center py-2">Animals</h2>
             </section>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 max-w-screen-xl mx-auto  border-2 border-red-500">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 max-w-screen-xl mx-auto">
             {
                 animalPhotos.map(item=><Animal key={item.id}  data={item} />)
             }
